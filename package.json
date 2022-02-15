@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "format": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -41,8 +44,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.28.0",
     "file-loader": "^6.2.0",
     "node-sass": "^7.0.1",
+    "prettier": "^2.5.1",
     "sass-loader": "^12.4.0"
   }
 }
