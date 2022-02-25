@@ -76,7 +76,6 @@ const OrderItems = () => {
                 </a> 
             </div>
         </div>   
-
     );
 }
 

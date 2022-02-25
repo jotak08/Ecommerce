@@ -7,7 +7,6 @@ const Checkout = () => {
     return (
         <>
             <Header />
-
             <div className="main-container">
                 <div className="main-container--myorder">
                     <h1 className="main-container--title">

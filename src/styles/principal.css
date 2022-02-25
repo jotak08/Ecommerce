@@ -11,6 +11,7 @@
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    padding-top: 60px;
 }
 .login {
     width: 100%;
@@ -228,11 +229,15 @@ body {
     color: var(--very-light-pink);
 }
 .desktop-menu {
+    background: white;
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
     padding: 20px 8px 0 20px;
+    position: absolute;
+    top: 60px;
+    right: 88px;
 }
 .desktop-menu ul {
     list-style: none;
@@ -261,6 +266,10 @@ body {
     padding: 0px 0 6px;
     margin-bottom: 10px;
 }
+.desktop-menu ul li a:hover {
+    text-decoration: underline;
+}
+
 .mobile-menu {
     padding: 10px 24px;
     font-size: var(--md);
@@ -297,6 +306,18 @@ body {
 }
 .last-ul li {
     margin-bottom: 0 !important;
+}
+.MyOrder {
+    width: 360px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    top: 60px;
+    bottom: 0;
+    border-radius: 6px;
+    border: 1px solid var(--very-light-pink);
 }
 .main-container--myorder {
     width: 100%;
@@ -399,15 +420,20 @@ body {
 .logo-navbar {
     width: 100px;
 }
-nav {
+.nav- {
     display: flex;
     justify-content: space-between;
     padding: 0 32px;
     box-shadow: 1px 1px 10px #8b8b66;
-    position: relative;
+    /* position: relative; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
 }
 .navbar-left ul,
-.navbar-right ul {
+.navbar-right2 ul {
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -416,6 +442,7 @@ nav {
     align-items: center;
     height: 60px;
     font-size: var(--md);
+    margin-right: 60px;
 }
 .navbar-left {
     display: flex;
@@ -424,7 +451,7 @@ nav {
     margin-left: 12px;
 }
 .navbar-left a,
-.navbar-right a {
+.navbar-right2 a {
     text-decoration: none;
     color: var(--very-light-pink);
     border: 1px solid var(--white);
@@ -432,7 +459,7 @@ nav {
     border-radius: 8px;
 }
 .navbar-left a:hover,
-.navbar-right a:hover {
+.navbar-right2 a:hover {
     text-decoration: none;
     color: var(--hospital-green);
     border: 1px solid var(--hospital-green);
@@ -462,6 +489,12 @@ nav {
     justify-content: center;
     align-items: center;
 }
+.carrito:hover {
+    cursor: pointer;
+    background-color: #e1ebdf;
+    border-radius: 6px;
+}
+
 .add-to-cart-button {
     display: flex;
     align-items: center;
@@ -471,10 +504,17 @@ nav {
     margin-right: 10px;
 }
 .product-detail {
+    height: 100vh;
     width: 360px;
-    padding-bottom: 24px;
+    padding: 24px;
+    position: absolute;
     position: absolute;
     right: 0;
+    background-color: white;
+    top: 60px;
+    bottom: 0;
+    border-radius: 6px;
+    border: 1px solid #cfcfcf;
 }
 .product-detail-close {
     background-color: var(--white);
